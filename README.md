@@ -3,6 +3,6 @@ Repositorio con labs de instruccion para el Sysadmin en cuestion de Virtualizaci
 
 ## Indice de laboratorios
 * [Virtualizacion básico - Pdte subir]()
-* [Clonado de equipos con Clonezilla - Pdre subir] ()
-* [Virtualizacion intermedio] (00_Virtualizacion/lab_virtualizacion.md)
+* [Clonado de equipos con Clonezilla - Pdre subir]()
+* [Virtualizacion intermedio](00_Virtualizacion/lab_virtualizacion.md)
 
