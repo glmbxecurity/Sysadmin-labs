@@ -52,7 +52,7 @@ Este laboratorio está enfocado a practicar el despliegue de la infraestructura 
 	- Servir RAID a los hipervisores 
 
 > *Laboratorio pendiente de realizar para confirmar si falta algo de información necesaria y relevante para llevarlo a cabo*
-
+![diagrama](./diagrama_lab_virtualizacion.jpeg)
 
 ## 1- Preparacion de la Matriz Base (Hyper-V)
 
