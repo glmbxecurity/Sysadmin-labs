@@ -1,4 +1,22 @@
-## Guía de Ejercicios: Despliegue Masivo (Hyper-V & Clonezilla)
+# Guía de Ejercicios: Despliegue Masivo (Hyper-V & Clonezilla)
+
+## Introducción
+
+### ¿Qué es Clonezilla y para qué sirve?
+**Clonezilla** es una herramienta *open-source* para la clonación y despliegue de discos y particiones a bajo nivel (*bare-metal*). A diferencia de una copia tradicional de archivos, trabaja a nivel de bloques del sistema de archivos (usando herramientas como `Partclone`), guardando y restaurando únicamente los bloques utilizados. Esto reduce drásticamente el tiempo de copia y el tamaño de las imágenes.
+
+En administración de sistemas, es un estándar para:
+- **Despliegues masivos:** Configurar decenas de puestos de trabajo idénticos en minutos en lugar de instalar uno por uno.
+- **Disaster Recovery:** Generar copias de respaldo completas de sistemas operativos y configuraciones críticas.
+
+### Propósito del Laboratorio
+En un entorno de producción real, este trabajo se realiza sobre hardware físico conectando equipos a un switch de red o usando medios externos. 
+
+En este laboratorio vamos a **reproducir esa arquitectura real en un entorno virtualizado (Hyper-V)** para dominar dos métodos fundamentales de despliegue:
+1. **Clonación local (Disco a Disco / Imagen):** Captura de una imagen maestra (*Golden Image*) a un almacenamiento secundario y su restauración individual en un equipo destino.
+2. **Clonación masiva por red (PXE / Broadcast):** Configuración de la máquina maestra como servidor de despliegue (*Clonezilla Lite Server*) para enviar la imagen simultáneamente a múltiples clientes que arrancan por red, simulando el aprovisionamiento de una oficina o laboratorio completo.
+
+---
 
 ## Hito 1: Preparación del Entorno Hyper-V (El Laboratorio)
 
