@@ -5,5 +5,6 @@ Repositorio con laboratorios de instrucción para Sysadmin en materia de Virtual
 ## Índice de laboratorios
 
 * [00 - Clonado de equipos con Clonezilla](00_Clonezilla/clonezilla.md)
-* [01 - Introducción a la Virtualización (Básico)](01_Virtualizacion_basico/virtualizacion_basico.md)
-* [02 - Virtualización Intermedio](02_Virtualizacion_intermedio/virtualizacion_intermedio.md)
+* 01 - Virtualización:
+  * [Virtualización Básica](01_Virtualizacion/virtualizacion_basico.md)
+  * [Virtualización Intermedia](01_Virtualizacion/virtualizacion_intermedio.md)
