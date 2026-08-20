@@ -1,6 +1,23 @@
- ### Introducción
+# Laboratorio de Infraestructura y Virtualización Intermedia
 
-Este laboratorio está enfocado a practicar el despliegue de la infraestructura base que alojan los servicios. Se practicará lo siguiente:
+## Introducción
+
+### ¿Qué construimos en este laboratorio?
+En este laboratorio vas a diseñar y desplegar una **maqueta completa de Datacenter corporativo** utilizando **virtualización anidada (*Nested Virtualization*)** sobre un hipervisor anfitrión (Hyper-V).
+
+El objetivo es reproducir cómo interactúan los componentes de infraestructura en producción:
+
+- **Cómputo (Hipervisores ESXi):** Nodos encargados de ejecutar las cargas de trabajo y máquinas virtuales finales.
+- **Red y Seguridad (Arista vEOS + pfSense):** Segmentación por VLANs, enlaces troncales (802.1Q), enrutamiento inter-VLAN y control perimetral mediante firewall.
+- **Almacenamiento Centralizado (TrueNAS):** Storage en red (iSCSI / NFS) servido a los hipervisores para permitir almacenamiento compartido y redundancia.
+
+Al finalizar, vas a tener una visión clara de cómo se integran la red virtual/física, el almacenamiento en bloque y los hipervisores en un entorno real.
+
+---
+
+### Alcance de la práctica
+
+Este laboratorio está enfocado a practicar el despliegue de la infraestructura base que aloja los servicios. Se practicará lo siguiente:
 
 
 * Configuración del laboratorio en HyperV como anfitrión de los hipervisores, almacenamiento y redes
